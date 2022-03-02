@@ -6,14 +6,14 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class ListCarsService {
-  url = 'http://localhost:4200/data/cars.json';
+  url = 'http://localhost:4200/assets/data/cars.json';
   constructor(private httpClient: HttpClient) {}
 
   /**
    * Get all cars
    * @returns Array of Car objects
    */
-  getCars(): Observable<object> {
+  getCars() {
     return this.httpClient.get(`${this.url}`);
   }
 }
