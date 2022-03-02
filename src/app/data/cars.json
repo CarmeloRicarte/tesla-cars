@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Roadster"
+  },
+  {
+    "name": "Tesla Model 3",
+    "types": [
+      {
+        "package": "Standard Range",
+        "price": 46000,
+        "colors": ["Black", "White", "Red", "Blue", "Silver"]
+      },
+      {
+        "package": "Long Range",
+        "price": 52000
+      }
+    ]
+  },
+  {
+    "name": "Tesla Model S",
+    "types": [
+      {
+        "package": "Long Range",
+        "price": 80000,
+        "colors": ["Black", "White", "Blue"]
+      },
+      {
+        "package": "Plaid",
+        "price": 140000,
+        "color": ["Red"]
+      }
+    ]
+  }
+]
