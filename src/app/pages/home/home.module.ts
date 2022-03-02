@@ -2,9 +2,10 @@ import { ListCarsComponent } from '../../components/list-cars/list-cars.componen
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home.component';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [HomeComponent, ListCarsComponent],
-  imports: [CommonModule],
+  imports: [CommonModule, HttpClientModule],
 })
 export class HomeModule {}
