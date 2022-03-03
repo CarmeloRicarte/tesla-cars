@@ -6,5 +6,5 @@ export interface Car {
 export interface CarType {
   package: string;
   price: number;
-  colors: string[];
+  colors?: string[];
 }

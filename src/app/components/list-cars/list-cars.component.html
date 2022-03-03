@@ -1,1 +1,15 @@
-<p>list-cars works!</p>
+<h2>List of Cars</h2>
+
+<div *ngFor="let car of cars, let i = index">
+  <p (click)="onClickElement(car.name)">{{car.name }} <span>{{i + 1}}</span></p>
+  <div *ngFor="let type of car.types, let j = index" class="margin-left-20px">
+    <p (click)="onClickElement(type.package)" [ngClass]="{'strong': !type.colors}">{{type.package}} - {{type.price |
+      currency:'USD':'symbol'}} {{ i + 1 }}.{{ j
+      + 1 }}</p>
+    <div *ngFor="let color of type.colors, let k = index" class="margin-left-20px">
+      <p (click)="onClickElement(color)" class="strong">
+        {{color}} {{ i + 1 }}.{{ j + 1 }}.{{ k + 1 }}
+      </p>
+    </div>
+  </div>
+</div>
