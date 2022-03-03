@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { Car } from '../../models/cars.model';
 
 @Injectable({
   providedIn: 'root',
@@ -13,7 +14,7 @@ export class ListCarsService {
    * Get all cars
    * @returns Array of Car objects
    */
-  getCars() {
-    return this.httpClient.get(`${this.url}`);
+  getCars(): Observable<Car[]> {
+    return this.httpClient.get<Car[]>(`${this.url}`);
   }
 }
