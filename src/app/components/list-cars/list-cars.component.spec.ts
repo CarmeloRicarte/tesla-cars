@@ -1,5 +1,4 @@
 import { HttpClientModule } from '@angular/common/http';
-import { tick } from '@angular/core/testing';
 import { createComponentFactory, Spectator } from '@ngneat/spectator/jest';
 import { of } from 'rxjs';
 import { ListCarsComponent } from './list-cars.component';
