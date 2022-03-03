@@ -3,6 +3,8 @@
     <h1>Available model cars of Tesla</h1>
   </div>
   <div class="col-12">
-    <app-list-cars></app-list-cars>
+    <app-list-cars (clickElement)="showMessage($event)"></app-list-cars>
   </div>
 </div>
+
+<p-toast key="outputEvent"></p-toast>
