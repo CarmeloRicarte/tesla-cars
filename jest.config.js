@@ -9,5 +9,8 @@ module.exports = {
       "filename": "tests-report.html",
       "openReport": true
     }]
-  ]
+  ],
+  moduleNameMapper: {
+    "^src/(.*)$": "<rootDir>/src/$1"
+  }
 };
